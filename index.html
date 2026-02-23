@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Vijairaj | Vibe Coder</title>
+    <meta name="description" content="Portfolio of Vignesh Vijairaj, a creative Vibe Coder.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.447.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="logo">Vignesh<span>.</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm">Let me Talk</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="container hero-container">
+                <div class="hero-content-left reveal-fade-in delay-1">
+                    <h1 class="hero-title">Hi, I'm <span class="purple-text">Vignesh Vijairaj</span></h1>
+                    <h2 class="hero-subtitle">Vibe Coder</h2>
+                    <p class="hero-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et officiis suscipit ut
+                        assumenda libero tenetur expedita eaque, quaerat quasi.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-outline-purple">See Projects</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="#" class="social-circle"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="social-circle"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-circle"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-right reveal-fade-in delay-4">
+                    <div class="hero-image-circle-wrapper">
+                        <img src="vignesh.jpg" alt="Vignesh Vijairaj" class="hero-main-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- High-Performance WebGL Liquid Chrome Background -->
+            <div class="liquid-container">
+                <canvas id="liquid-chrome-canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- Load Liquid Chrome Script -->
+        <script src="liquid-chrome.js"></script>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>About Me</h2>
+                    <p>Merging aesthetics with technology to solve complex problems.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I am a passionate developer with a keen eye for design. With several years of experience in
+                            the digital space, I specialize in creating seamless user interfaces and robust back-end
+                            systems.</p>
+                        <p>My approach is rooted in clean code, accessibility, and modern design principles. I believe
+                            that every interaction should be a delight.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card reveal">
+                            <i data-lucide="layout"></i>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating intuitive and responsive user interfaces.</p>
+                        </div>
+                        <div class="skill-card reveal">
+                            <i data-lucide="code"></i>
+                            <h3>Frontend</h3>
+                            <p>Building high-performance apps with modern JS.</p>
+                        </div>
+                        <div class="skill-card reveal">
+                            <i data-lucide="database"></i>
+                            <h3>Backend</h3>
+                            <p>Scaling reliable and efficient server logic.</p>
+                        </div>
+                        <div class="skill-card reveal">
+                            <i data-lucide="zap"></i>
+                            <h3>Motion</h3>
+                            <p>Bringing designs to life with smooth animations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Selected Projects</h2>
+                    <p>A collection of some of my favorite works.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800"
+                                alt="E-commerce App">
+                        </div>
+                        <div class="project-info">
+                            <h3>Lumina E-commerce</h3>
+                            <p>A high-end minimal e-commerce platform for luxury brands.</p>
+                            <a href="#" class="btn-text">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=800"
+                                alt="Analytics Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <h3>Nexus Analytics</h3>
+                            <p>Real-time data visualization tool for enterprise metrics.</p>
+                            <a href="#" class="btn-text">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                                alt="Social Platform">
+                        </div>
+                        <div class="project-info">
+                            <h3>Aura Network</h3>
+                            <p>A community-driven platform for digital artists and creators.</p>
+                            <a href="#" class="btn-text">View Project <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <h2>Let's Talk.</h2>
+                        <p>Have a project in mind? Reach out and let's create something extraordinary together.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i data-lucide="github"></i></a>
+                            <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+                            <a href="#" class="social-icon"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Creative. Designed with <span class="heart">❤</span> by vignesh</p>
+        </div>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Chatbot Floating Action Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Toggle chat">
+        <i data-lucide="message-circle" class="chat-icon"></i>
+        <i data-lucide="x" class="close-icon" style="display: none;"></i>
+    </button>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i data-lucide="bot"></i>
+            </div>
+            <div class="chatbot-info">
+                <h3>Vibe Bot</h3>
+                <span>Always vibing with you</span>
+            </div>
+        </div>
+        <div id="chatbot-messages" class="chatbot-messages">
+            <div class="message bot-message">
+                Hi! I'm Vibe Bot. Tell me your name, age, or interests and I'll remember them! 👋
+            </div>
+        </div>
+        <form id="chatbot-input-form" class="chatbot-input-form">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." required autocomplete="off">
+            <button type="submit" class="chatbot-send-btn">
+                <i data-lucide="send"></i>
+            </button>   
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
