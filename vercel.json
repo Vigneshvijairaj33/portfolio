@@ -1,8 +1,8 @@
 {
-    "rewrites": [
-        {
-            "source": "/api/contact",
-            "destination": "/api/contact.js"
+    "version": 2,
+    "functions": {
+        "api/*.js": {
+            "runtime": "vercel-node@latest"
         }
-    ]
+    }
 }
